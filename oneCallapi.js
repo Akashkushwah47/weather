@@ -148,8 +148,8 @@ function oneCallApi() {
         let dailyDiv = document.getElementById("dailyRowMainDiv")
         let dailydivclass = document.getElementsByClassName("dailyRow")[i];
         dailydivclass.innerHTML = `<div>${arrayforshowweaksday[i]}</div> 
-        <div style="width:10%;"><img src="http://openweathermap.org/img/wn/${dailyicon}@2x.png"></div> 
-        <div style="width:40%;">${dailyweathername}</div>
+        <div style="width:15%;"><img src="http://openweathermap.org/img/wn/${dailyicon}@2x.png"></div> 
+        <div style="width:35%;">${dailyweathername}</div>
          <div>${dailytempmax}/${dailytempmin}°c</div>`;
       }
 
