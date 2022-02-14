@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AkWeather </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="utilities.css">
+</head>
+
+<body>
+    <!-- <img src=https://source.unsplash.com/1600x900/?weather> -->
+    <div id=main>
+
+        <nav id=navbar>
+            <h3>
+                <spam style="color:red;">i</spam>Weather
+            </h3>
+            <div id=search>
+                <input type=search id=searchBox placeholder="Enter city name">
+                <button id=searchBtn>Search</button>
+            </div>
+        </nav>
+
+        <div class="margin viewPort">
+            <hr>
+        </div>
+        <!-- <input type=text id=check> -->
+        <div id="parentOfTwoDiv" class="viewPort margin">
+
+            <div id=showToday>
+                <h1 id=cityNameShow class="cityNameShow">________</h1>
+
+                <p><span id=temperature class="temperature">__</span>
+                    <span><sup>°C</sup></span>
+                    <span id=weatherName>......</span>
+                    <img id=weatherIcon height="60">
+
+                </p>
+
+
+            </div>
+            <div id=toShowDataInLeftSide>
+                <table id=secondTable>
+                    <tr class="secondTableRow">
+                        <td class="secondTableColumn secondTableColumn1">
+                            <div>
+                                <div>
+                                    <img src="img/high-temperature.png">
+                                </div>
+                                <div>Temperature</div>
+                            </div>
+                        </td>
+                        <td class="secondTableColumn  secondTableColumn2" id=temperatureInSecondTable>___°c</td>
+                    </tr>
+                    <tr class="secondTableRow">
+                        <td class="secondTableColumn secondTableColumn1">
+                            <div>
+                                <div>
+                                    <img src="img/wind.png">
+                                </div>
+                                <div>Wind speed</div>
+                            </div>
+                        </td>
+                        <td class="secondTableColumn  secondTableColumn2" id=windspeed>___km/h</td>
+                    </tr>
+                    <tr class="secondTableRow">
+                        <td class="secondTableColumn secondTableColumn1">
+                            <div>
+                                <div>
+                                    <img src="img/visible.png">
+                                </div>
+                                <div>Visibility</div>
+                            </div>
+                        </td>
+                        <td class="secondTableColumn  secondTableColumn2" id=visibility>___ m</td>
+                    </tr>
+                    <tr class="secondTableRow">
+                        <td class="secondTableColumn secondTableColumn1">
+                            <div>
+                                <div>
+                                    <img src="img/pressure.png">
+                                </div>
+                                <div>Air pressure</div>
+                            </div>
+                        </td>
+                        <td class="secondTableColumn  secondTableColumn2" id=airPressure>___hPa</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+        <!-- forhourly forcastin div  -->
+        <div class="viewPort margin" id=hourlymain>
+
+            <div class="smallHourlyDiv">1</div>
+            <div class="smallHourlyDiv">2</div>
+            <div class="smallHourlyDiv">3</div>
+            <div class="smallHourlyDiv">4</div>
+            <div class="smallHourlyDiv">5</div>
+            <div class="smallHourlyDiv">6</div>
+            <div class="smallHourlyDiv">7</div>
+            <div class="smallHourlyDiv">8</div>
+            <div class="smallHourlyDiv">9</div>
+            <div class="smallHourlyDiv">10</div>
+            <div class="smallHourlyDiv">11</div>
+            <div class="smallHourlyDiv">12</div>
+            <div class="smallHourlyDiv">13</div>
+            <div class="smallHourlyDiv">14</div>
+            <div class="smallHourlyDiv">15</div>
+            <div class="smallHourlyDiv">16</div>
+            <div class="smallHourlyDiv">17</div>
+            <div class="smallHourlyDiv">18</div>
+            <div class="smallHourlyDiv">19</div>
+            <div class="smallHourlyDiv">20</div>
+            <div class="smallHourlyDiv">21</div>
+            <div class="smallHourlyDiv">22</div>
+            <div class="smallHourlyDiv">23</div>
+            <div class="smallHourlyDiv">24</div>
+            <div class="smallHourlyDiv">25</div>
+            <div class="smallHourlyDiv">26</div>
+            <div class="smallHourlyDiv">27</div>
+            <div class="smallHourlyDiv">28</div>
+            <div class="smallHourlyDiv">29</div>
+            <div class="smallHourlyDiv">30</div>
+            <div class="smallHourlyDiv">31</div>
+            <div class="smallHourlyDiv">32</div>
+            <div class="smallHourlyDiv">33</div>
+            <div class="smallHourlyDiv">34</div>
+            <div class="smallHourlyDiv">35</div>
+            <div class="smallHourlyDiv">36</div>
+            <div class="smallHourlyDiv">37</div>
+
+
+        </div>
+
+        <!-- ---------for next 7 days forcast--------------------------------------------------------------------- -->
+        <div id=forSevenDaysMain>
+            <div>
+                <div></div>
+            </div>
+
+        </div>
+        <!-- just for check1 -->
+        <P id=latitude style="display: none;">latitude:</P>
+        <p id=longitude style="display: none;">longitude</p>
+        <!-- <span id=latitude>
+    
+</span>
+<span id=longitude>
+    
+</span> -->
+        <!-- this is for next seven days data------------- -->
+        <div class="viewPort margin" id="dailyMaindiv">
+            <div id="dayRowMainDiv">
+                <div class="dailyRow">
+
+                </div>
+                <div class="dailyRow">
+
+                </div>
+                <div class="dailyRow">
+
+                </div>
+                <div class="dailyRow">
+
+                </div>
+                <div class="dailyRow">
+
+                </div>
+                <div class="dailyRow">
+
+                </div>
+                <div class="dailyRow">
+
+                </div>
+
+
+
+
+            </div >
+            <div id=alerts>
+                Alerts
+            </div>
+            
+
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- -------------------------footer footer------------------------------------------------- -->
+        <div id=footer>
+            <!-- <p id=latitude style="display:none">ak</p>
+            <p id=longitude style="display:none">pk</p> -->
+
+        </div>
+    </div>
+
+    <!-- <iframe src="https://cap-sources.s3.amazonaws.com/in-imd-en/rss.xml" title="W3Schools Free Online Web Tutorials"></iframe> -->
+    <script src="index.js"></script>
+    <!-- <script src="checkonece.js"></script> -->
+    <!-- <script src="checktwice.js"></script> -->
+    <script src="oneCallapi.js"></script>
+
+    <script src="check1.js"></script>
+    <!-- <script src="oneCallapi.js"></script> -->
+    <!-- <script src="jsfordaily.js"></script> -->
+
+    <!-- <script src="check2.js"></script> -->
+
+</body>
+
+</html>
