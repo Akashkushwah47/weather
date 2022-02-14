@@ -1,0 +1,281 @@
+
+
+
+
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+#main{
+    background-color: whitesmoke;
+   
+    
+}
+#navbar{
+    width:80vw;
+    /* background-color: red; */
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    
+}#navbar h3{
+    padding-top:15px;
+    font-size: 30px;
+}
+/* styling of searchBox */
+#searchBox{
+margin:10px 0px 0px 15px;
+width:250px;
+height:30px;
+border:none;
+border-bottom: 2px solid black;
+outline: none;
+font-size: 18px;
+padding:10px;
+
+text-transform: uppercase;
+box-shadow: 1px 1px 5px gray;
+
+}
+/* styling of searchbtn */
+#searchBtn{
+    /* width:80px; */
+    height:30px;
+    margin-left:0px;
+    border:none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:white;
+    padding:5px;
+    background-color: lightblue;
+box-shadow: 1px 1px 5px gray;
+    
+}
+#searchBtn:hover{
+    color:black;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------------- */
+#parentOfTwoDiv{
+    margin-top: 10px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* background-color: yellow; */
+}
+/* show today data div box styling */
+#showToday{
+    /* margin-top: 25px; */
+    /* margin-left: 10px; */
+    padding-top:50px;
+   
+
+    width:59%;
+    background-color:pink;
+    /* border-left: 10px solid purple; */
+    box-shadow: -5px 0px 0px purple ;
+    border-radius: 5px ;
+}
+/* cityname style */
+#cityNameShow{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+color:white;
+background-color: purple;
+margin-left:20%;
+padding-left:20px;
+
+}
+#temperature{
+    margin-left: 20%;
+    font-size: 70px;
+    
+}
+#weatherName{
+    margin-left:30px;
+    font-size: 30px;
+}
+
+
+#toShowDataInLeftSide{
+    width:40%;
+ display: flex;
+ justify-content: center;
+ /* background-color: red; */
+}
+/* styling of second table  */
+#secondTable{
+    color:black;
+    /* border:none; */
+    /* border-collapse: collapse; */
+    /* border-color: green; */
+    /* margin-top: 20px; */
+    /* width:49%; */
+    
+
+}
+.secondTableRow{
+    background-color: whitesmoke;
+    /* padding:5px; */
+    /* margin-bottom:25px; */
+}
+.secondTableColumn{
+    font-size: 20px;
+    border-bottom:2px solid black;
+    color:purple;
+    padding-left:10px;
+    padding-right: 10px;
+    /* border-radius: 20px 0px 0px 20px; */
+    padding-top: 10px;
+
+}
+.secondTableColumn2{
+    border-radius: 0px 20px 20px 0px;
+    /* color:black; */
+    
+}
+.secondTableColumn1 div{
+    /* background-color: blueviolet; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    
+    /* display: ; */
+}
+
+.secondTableColumn1 img{
+    width:40px;
+    height: 40px;
+    
+margin-right: 5px;
+}
+
+/* ------------------------------for hourly division----------------------- */
+#hourlymain{
+    height:70px;
+    /* width:auto; */
+    /* background-color: rgba(92, 100, 218, 0.966); */
+    background-image: linear-gradient(90deg, rgba(85, 96, 250, 0.9), rgb(202, 218, 241));
+   
+    display: flex;
+    overflow: scroll;
+    margin-top: 15px;
+    
+    border-radius: 10px  10px 0px 0px;
+    /* padding:0px 10px 0px 10px; */
+    border:5px solid rgba(230, 233, 238, 0.876);
+    /* opacity: ; */
+    border-bottom:0px;
+    border-right: 0px;
+    
+
+    /* border-spacing: 50px; */
+}
+
+#hourlymain::-webkit-scrollbar{
+    height:5px;
+    width:0px;
+}
+#hourlymain::-webkit-scrollbar-track{
+    background-color: gainsboro;
+    /* background-color: red; */
+    
+}
+#hourlymain::-webkit-scrollbar-thumb{
+    background-color: purple;
+    border-radius:2px ;
+}
+
+.smallHourlyDiv{
+    width:80px;
+    height:60px;
+    /* margin:2px; */
+    
+    /* background-color:pink; */
+}
+
+.smallHourlyDivTemp{
+    width:80px;
+    height:18px;
+    /* background-color: blue; */
+    flex-shrink: 0;
+    font-size: 18px;
+    /* font-weight: bold; */
+    padding-left: 10px;
+    /* padding:25px; */
+}
+.smallHourlyDivTime{
+    margin-top: 2px;
+    width:80px;
+    height:15px;
+    /* background-color: Blue; */
+}
+.smallHourlyDivImg{
+    width:80px;
+    height:30px;
+    overflow: hidden;
+    /* background-color: yellow; */
+    /* padding-bottom: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smallHourlyDivImg img{
+    width:50px;
+    height:50px;
+    
+    /* border:5px; */
+    /* border-radius: 5px solid black; */
+}
+
+
+/* styling for daily data show ------------------ */
+#dailyMaindiv{
+    display: flex;
+    /* justify-content: center; */
+}
+ #dayRowMainDiv{
+     /* height:50px; */
+     /* background-color: red; */
+     margin-top:10px;
+     width:50%;
+
+ }
+.dailyRow{
+    /* width:50px; */
+    height: 35px;
+    /* background-color: red; */
+    margin-bottom:2px;
+    background-image:linear-gradient(90deg, rgba(156, 160, 241, 0.966), rgb(248, 249, 250));
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+   
+ }
+ .dailyRow div {
+     /* background-color:blueviolet; */
+     
+     width:25%;
+     height: 50px;
+     display: flex;
+    
+     align-items: center;
+     /* justify-content: center; */
+    font-size: 18px;
+    text-transform: capitalize;
+ }
+ .dailyRow img{
+     height:55px;
+ }
+ /* toshow alerts---------------- */
+ #alerts{
+     width:50%;
+     background-color: blueviolet;
+     margin-top:10px;
+ }
+
+
+
