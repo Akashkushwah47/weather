@@ -1,0 +1,75 @@
+.viewPort{
+    width:80vw;
+}
+.margin{
+    margin:auto;
+    /* border: 5px solid whitesmoke; */
+}
+/* formobileview */
+@media only screen and (max-width: 600px) {
+
+
+#search{
+    /* display: block; */
+    /* background-color: red; */
+    flex-wrap: wrap;
+    
+}
+#searchBox{
+    /* color:pink; */
+    width:100%;
+    font-size: 15px;
+    /* margin-right: 2px; */
+}
+#searchBtn{
+    /* margin-left:15px; */
+    margin-bottom: 2px;
+    width: 100%;
+
+}
+
+
+
+
+/* ------------------------------------------ */
+
+    #showToday{
+        width:100%;
+    
+    }
+    #toShowDataInLeftSide{
+        width:100%;
+        
+    }
+
+    /* #secondTable{
+width:75%;
+    } */
+   .viewPort{
+       width:100vw;
+   }
+   /* --------------------------------------------- */
+
+   #hourlymain{
+       border-left:0px;
+       border-radius:0px;
+       padding-left: 5px;
+
+   }
+   /* --------------------------------------------- */
+   #dailyMaindiv{
+       flex-wrap: wrap;
+       
+   }  
+   #dayRowMainDiv{
+       width:100%;
+       
+   }
+   .dailyRow{
+       font-size: 15px;
+   }
+
+   #alerts{
+width:100%;
+   }
+}
